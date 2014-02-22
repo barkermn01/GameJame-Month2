@@ -1,9 +1,10 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class SplatController : MonoBehaviour {
 
-	private float startTime;
+
+	private float startTime; 
 	private float currentTime;
 
 	// Use this for initialization

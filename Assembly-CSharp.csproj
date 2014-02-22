@@ -50,6 +50,7 @@
      <Compile Include="Assets\CrossHairMovement.cs" />
      <Compile Include="Assets\KillScore.cs" />
      <Compile Include="Assets\ScoreManager.cs" />
+     <Compile Include="Assets\Scripts\BackDropController.cs" />
      <Compile Include="Assets\Scripts\ClownMovement.cs" />
      <Compile Include="Assets\Scripts\GameController.cs" />
      <Compile Include="Assets\Scripts\PieController.cs" />

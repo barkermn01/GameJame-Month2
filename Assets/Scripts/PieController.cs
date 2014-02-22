@@ -61,12 +61,14 @@ public class PieController : MonoBehaviour {
 
 		if(transform.localScale.x > 1f){
 			Instantiate (splat, gameObject.transform.localPosition, Quaternion.identity);
+			((ScoreManager)GameObject.FindGameObjectWithTag("background").GetComponent(typeof(ScoreManager))).Score--;
 			Destroy (gameObject);
 			// TODO make it splatter
 		}
 	}
 
 	void OnMouseUp() {
+		((ScoreManager)GameObject.FindGameObjectWithTag("background").GetComponent(typeof(ScoreManager))).Score++;
 		Destroy (gameObject);
 	}
 

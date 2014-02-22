@@ -2,6 +2,7 @@
 using System.Collections;
 
 public class PieController : MonoBehaviour {
+	public GameObject splat;
 
 	// The time that this play through started.
 	private float startTime;
@@ -59,6 +60,7 @@ public class PieController : MonoBehaviour {
 		transform.localScale += new Vector3(xChange, yChange, 0);
 
 		if(transform.localScale.x > 1f){
+			Instantiate (splat, gameObject.transform.localPosition, Quaternion.identity);
 			Destroy (gameObject);
 			// TODO make it splatter
 		}

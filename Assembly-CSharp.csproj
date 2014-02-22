@@ -54,6 +54,7 @@
      <Compile Include="Assets\Scripts\GameController.cs" />
      <Compile Include="Assets\Scripts\PieController.cs" />
      <Compile Include="Assets\Scripts\PieSpawner.cs" />
+     <Compile Include="Assets\Scripts\SplatController.cs" />
      <Compile Include="Assets\Scripts\TimeTicker.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

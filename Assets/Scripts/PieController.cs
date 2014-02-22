@@ -56,7 +56,6 @@ public class PieController : MonoBehaviour {
 //				yChange = xChange;
 //			}
 
-
 		transform.localScale += new Vector3(xChange, yChange, 0);
 
 		if(transform.localScale.x > 1f){
@@ -65,7 +64,7 @@ public class PieController : MonoBehaviour {
 		}
 	}
 
-	void OnMouseDown() {
+	void OnMouseUp() {
 		Destroy (gameObject);
 	}
 

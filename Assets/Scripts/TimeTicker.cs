@@ -3,13 +3,20 @@ using System.Collections;
 
 public class TimeTicker : MonoBehaviour {
 
-	// Use this for initialization
 	void Start () {
-	
+		StartCoroutine(MoveSeconds());
 	}
 	
-	// Update is called once per frame
-	void Update () {
-	
+	// Rotates the seconds hand around the clock face.
+	IEnumerator MoveSeconds(){
+		while(true){
+			transform.Rotate(Vector3.forward, -6f);
+			Debug.Log (transform.localRotation.eulerAngles);
+			if (transform.localRotation.eulerAngles.z <= 0){
+				yield return new WaitForSeconds(200f);
+			}
+
+			yield return new WaitForSeconds(0.5f);
+		}
 	}
 }
